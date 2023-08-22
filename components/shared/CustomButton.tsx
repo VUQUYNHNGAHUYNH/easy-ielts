@@ -1,17 +1,18 @@
 "use client";
 
-import { CustomButtonProps } from "@types";
+import { CustomButtonProps } from "@/types";
 
 const CustomButton = ({
   title,
   containerStyle,
   handleClick,
+  btnType,
 }: CustomButtonProps) => {
   return (
     <button
       disabled={false}
-      type={"button"}
-      className={` flex relative justify-center items-center py-3 px-6 outline-none hover:bg-light-blue
+      type={btnType || "button"}
+      className={` flex relative justify-center items-center py-3 px-6 outline-none transition duration-300 ease-in-out
        ${containerStyle}`}
       onClick={handleClick}
     >

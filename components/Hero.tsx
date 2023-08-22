@@ -6,7 +6,7 @@ import CustomButton from "./shared/CustomButton";
 const Hero = () => {
   const handleScroll = () => {};
   return (
-    <div className="flex flex-col xl:flex-row gap-5 pt-12 max-w-[1440px] mx-auto justify-center items-center ">
+    <div className="flex flex-col xl:flex-row gap-5 pt-36 xl:pt-24 max-w-[1440px] mx-auto justify-center items-center ">
       <div className="flex-1 xl:w-1/2 sm:px-16 px-6 z-1">
         <h1 className="text-dark-blue 2xl:text-[62px] sm:text-[54px] text-[45px] font-extrabold">
           CHINH PHỤC IELTS!
@@ -20,8 +20,9 @@ const Hero = () => {
         </p>
 
         <CustomButton
+          btnType="button"
           title="Khoá học"
-          containerStyle="bg-dark-blue text-white rounded-full mt-10"
+          containerStyle="bg-dark-blue text-white rounded-full mt-10 hover:bg-light-blue"
           handleClick={handleScroll}
         />
       </div>
