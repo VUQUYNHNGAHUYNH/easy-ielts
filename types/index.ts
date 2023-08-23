@@ -7,3 +7,9 @@ export interface CustomButtonProps {
     handleClick?: MouseEventHandler<HTMLButtonElement>;
     btnType: "button" | "submit" 
 }
+
+export interface CourseProps {
+    title: string;
+    description: string;
+    imageSrc: string;
+}

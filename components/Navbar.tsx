@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import CustomButton from "./shared/CustomButton";
-import { useEffect, useState } from "react";
 
 const navLinks = [
   {
@@ -11,7 +10,7 @@ const navLinks = [
     title: "Trang chủ",
   },
   {
-    id: "Courses",
+    id: "courses",
     title: "Khóa học",
   },
 ];
@@ -19,7 +18,7 @@ const navLinks = [
 const Navbar = () => {
   return (
     <header className="bg-white w-full fixed top-0 z-10">
-      <div className="flex justify-between items-center max-w-[1440px] mx-auto sm:px-16 px-6 py-4">
+      <div className="flex justify-between items-center max-w-[1440px] mx-auto sm:px-16 px-6">
         <Link href="/" className="flex justify-center items-center">
           <Image src="/logo.png" alt="logo" width={100} height={20} />
         </Link>

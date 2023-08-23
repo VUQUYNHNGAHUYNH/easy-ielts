@@ -32,8 +32,8 @@ const Hero = () => {
             src="/hero.png"
             className="object-cover z-0"
             alt="hero"
-            width={1000}
-            height={1000}
+            width={800}
+            height={800}
           />
         </div>
       </div>
